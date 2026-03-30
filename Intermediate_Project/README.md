@@ -1,47 +1,47 @@
-# Heart Failure Prediction
+# Netflix Analysis and Recommendation
 
 ## Description
 
-This project focuses on predicting the likelihood of heart failure using machine learning techniques. It analyzes clinical data and compares different models to evaluate performance.
+This project analyzes Netflix content data to understand patterns in movies and TV shows. It also includes a simple recommendation approach based on genres and country.
 
 ## Dataset
 
-* Source: Kaggle (Heart Failure Clinical Records Dataset)
-* Description of data: The dataset contains medical attributes such as age, ejection fraction, serum creatinine, and other health indicators used to predict the occurrence of heart failure (`DEATH_EVENT`).
+* Source: Kaggle (Netflix Movies and TV Shows Dataset)
+* Description of data: The dataset contains information such as title, type, country, release year, rating, duration, and genres of Netflix content.
 
 ## Steps Performed
 
 1. Data Cleaning
+   Removed missing values in key columns and handled remaining null values.
 
-   * Checked for missing values and ensured data consistency
 2. Exploratory Data Analysis
+   Examined dataset structure, content distribution, and key attributes.
 
-   * Analyzed dataset using summary statistics and data inspection
 3. Visualization
+   Plotted graphs for content type, country distribution, release trends, and genre frequency.
 
-   * Used countplot and correlation heatmap to understand feature relationships
 4. Model Building (if applicable)
-
-   * Applied Support Vector Machine (SVM) and Logistic Regression
+   Implemented a simple recommendation system using genre and country filters.
 
 ## Results
 
-* SVM achieved accuracy of around 90%
-* Logistic Regression achieved accuracy of around 86%
-* SVM performed better, indicating non-linear patterns in the data
+* Movies are more frequent than TV shows on Netflix.
+* Content production has increased significantly over time.
+* Drama and Comedy are the most common genres.
+* A large portion of content is produced by a few countries.
+* Most movies fall within a typical duration range of 80–120 minutes.
 
 ## Tools Used
 
 * Python
-* NumPy
 * Pandas
+* NumPy
 * Matplotlib
 * Seaborn
-* Scikit-learn
 
 ## Conclusion
 
-The project shows that machine learning models can effectively predict heart failure using clinical data. Among the models tested, SVM provided better performance due to its ability to capture complex relationships.
+The analysis highlights major trends in Netflix content and demonstrates how basic filtering can be used to recommend titles. The project combines data exploration with simple logic to provide useful insights.
 
 ## Author
 
