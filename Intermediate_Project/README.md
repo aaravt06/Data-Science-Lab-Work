@@ -2,37 +2,46 @@
 
 ## Description
 
-This project applies machine learning techniques to predict heart failure using a clinical dataset. The goal is to analyze patient data and compare model performance.
+This project focuses on predicting the likelihood of heart failure using machine learning techniques. It analyzes clinical data and compares different models to evaluate performance.
 
 ## Dataset
 
-Heart Failure Clinical Records Dataset
-Target variable: `DEATH_EVENT`
+* Source: Kaggle (Heart Failure Clinical Records Dataset)
+* Description of data: The dataset contains medical attributes such as age, ejection fraction, serum creatinine, and other health indicators used to predict the occurrence of heart failure (`DEATH_EVENT`).
 
-## Approach
+## Steps Performed
 
-* Data inspection and basic analysis
-* Visualization using countplot and correlation heatmap
-* Train-test split
-* Feature scaling using StandardScaler
-* Model training using SVM and Logistic Regression
+1. Data Cleaning
+
+   * Checked for missing values and ensured data consistency
+2. Exploratory Data Analysis
+
+   * Analyzed dataset using summary statistics and data inspection
+3. Visualization
+
+   * Used countplot and correlation heatmap to understand feature relationships
+4. Model Building (if applicable)
+
+   * Applied Support Vector Machine (SVM) and Logistic Regression
 
 ## Results
 
-SVM achieved higher accuracy (~90%) compared to Logistic Regression (~86%).
-This suggests the presence of non-linear relationships in the dataset.
+* SVM achieved accuracy of around 90%
+* Logistic Regression achieved accuracy of around 86%
+* SVM performed better, indicating non-linear patterns in the data
 
-## Evaluation
+## Tools Used
 
-Model performance was evaluated using accuracy, confusion matrix, and classification report.
+* Python
+* NumPy
+* Pandas
+* Matplotlib
+* Seaborn
+* Scikit-learn
 
 ## Conclusion
 
-Both models performed well, with SVM giving better results. The project shows how machine learning can be used for medical prediction tasks.
-
-## Tools
-
-Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+The project shows that machine learning models can effectively predict heart failure using clinical data. Among the models tested, SVM provided better performance due to its ability to capture complex relationships.
 
 ## Author
 
